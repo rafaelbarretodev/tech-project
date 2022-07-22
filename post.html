@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="shortcut icon" href="./img/favicon-1.png" />
+    <!-- ========== FONT AWESOME ========== -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="./style.css" />
+    <title> Know-how </title>
+  </head>
+
+  <body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav>
+      <img src="./img/logo1.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <img class="close" id="menu-close" src="./img/cross.png" alt="" />
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">Sobre nós </a></li>
+          <li><a href="./mentores.html">Mentores</a></li>
+          <li><a href="./course.html">Imersões</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="./socialpainel.html">Comunidade</a></li>
+        </ul>
+        <img id="menu-btn" src="./img/menus.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- ========== POST ========== -->
+    <section id="blog-container">
+      <div class="blogs blogpost">
+        <div class="post">
+          <img src="./img/blog2.jpg" alt="">
+          <h3>Conheça mais sobre desenvolvimento</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aliquam doloremque sed similique natus itaque. Eius quasi reprehenderit ratione repellendus, ea corrupti blanditiis veniam quisquam, commodi quae recusandae delectus fugiat?
+            
+          <br><br>
+            
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis eveniet tenetur iure rem quis nulla corrupti soluta esse architecto, voluptatem, tempora commodi laborum minima vel alias aspernatur, distinctio voluptates dicta reiciendis omnis nihil! Accusantium, architecto, ex dolor dolorem temporibus alias vel ullam assumenda vitae culpa quo deleniti? Maiores, minus autem?
+
+          <br><br>
+
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae beatae, commodi id voluptatem delectus praesentium, dolorem corrupti doloremque labore possimus molestiae sapiente explicabo debitis itaque, dolores fugiat distinctio quibusdam! Ex quae odio natus iusto nobis provident beatae laborum earum aut fugit eaque aperiam, architecto velit quas, quod laudantium illum. Nihil amet autem voluptatum perspiciatis odit ut natus cum odio, at quam ipsam voluptatibus dolore, facilis minima impedit nam a dolores dolorem ullam officia repellendus quidem quibusdam consequuntur aliquam. Placeat, nisi!
+          
+          <br><br>
+
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quidem odit ratione deserunt soluta ad quod, distinctio cupiditate quae ullam?
+          
+          <br><br>
+
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa porro sapiente corrupti impedit dolores laudantium atque, nulla eius delectus excepturi possimus similique culpa corporis, magnam magni! Eius non ratione vitae assumenda placeat, rem consequuntur quasi hic ea odio, excepturi facere obcaecati iste asperiores! Nostrum excepturi necessitatibus ipsum quaerat vitae similique?
+        
+        </p>
+        <a href="#">LER PROXIMO ?</a>
+        </div>
+      </div>
+    </section>
+
+
+    <style>
+      #blog-container .blogpost {
+        width: 60%;
+        margin: 0 auto;
+      }
+      #blog-container .blogpost p {
+        text-align: justify;
+        padding-bottom: 60px !important;
+      }
+    </style>
+
+   <!-- ========== FOOTER ========== -->
+   <footer class="footer" id="footer">
+    <div class="copyright">
+      <p>
+        Copyright ©2022 Direitos Reservados | Esse modelo foi desenvolvido
+        pela TechProject
+      </p>
+      <div class="pro-links">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+    
+    <script>
+      $('#menu-btn').click(function(){
+        $('nav .navigation ul').addClass('active')
+      });
+      $('#menu-close').click(function(){
+        $('nav .navigation ul').removeClass('active')
+      });
+    </script>
+
+  </body>
+</html>

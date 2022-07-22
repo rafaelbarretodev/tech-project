@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- ========== FAVICON ========== -->
+    <link rel="shortcut icon" href="./img/upload.png" />
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>UPLOAD</title>
+  </head>
+
+  <body>
+    <!-- ========== UPLOAD FILES ========== -->
+
+    <div class="body2">
+      <div class="wrapper2">
+        <h2>Upload de Arquivos</h2>
+        <form action="#">
+          <input type="file" class="file-input" hidden />
+          <i class="fas fa-cloud-upload-alt"></i>
+          <p>Arquivos para Upload</p>
+        </form>
+        <section class="progress-area">
+          <li class="row">
+            <i class="fas fa-file-alt"></i>
+            <div class="content">
+              <div class="details">
+                <span class="name">image_01.png • Uploading AULAS</span>
+                <span class="percent">65%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </li>
+        </section>
+        <section class="uploaded-area">
+          <li class="row">
+            <div class="content">
+              <i class="fas fa-file-alt"></i>
+              <div class="details">
+                <span class="name">AULAS_ep2.pdf • Uploaded AULAS</span>
+                <span class="size">345.5 kb</span>
+              </div>
+            </div>
+            <i class="fas fa-check"></i>
+          </li>
+          <li class="row">
+            <div class="content">
+              <i class="fas fa-file-alt"></i>
+              <div class="details">
+                <span class="name">image_01.png • Uploaded AULAS</span>
+                <span class="size">1.5 GB</span>
+              </div>
+            </div>
+            <i class="fas fa-check"></i>
+          </li>
+          <li class="row">
+            <div class="content">
+              <i class="fas fa-file-alt"></i>
+              <div class="details">
+                <span class="name">AULAS_ep_23 • Uploaded AULAS</span>
+                <span class="size">5 GB</span>
+              </div>
+            </div>
+            <i class="fas fa-check"></i>
+          </li>
+          <li class="row">
+            <div class="content">
+              <i class="fas fa-file-alt"></i>
+              <div class="details">
+                <span class="name">Videos_MP4 • Uploaded AULAS</span>
+                <span class="size">30 GB</span>
+              </div>
+            </div>
+            <i class="fas fa-check"></i>
+          </li>
+          <li class="row">
+            <div class="content">
+              <i class="fas fa-file-alt"></i>
+              <div class="details">
+                <span class="name">image_03.png • Uploaded AULAS</span>
+                <span class="size">7.2 GB</span>
+              </div>
+            </div>
+            <i class="fas fa-check"></i>
+          </li>
+        </section>
+      </div>
+    </div>
+
+
+    <style>
+      /* UPLOAD FILES CSS */
+      .body2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+        background: #f1f1f1;
+        
+      }
+      .wrapper2 {
+        width: 630px;
+        /* height: 60vh; */
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        margin: 40px;
+      }
+      .wrapper2 h2 {
+        font-size: 27px;
+        font-weight: 600;
+        text-align: center;
+      }
+      .wrapper2 form {
+        border: 2px dashed #c0bfbf;
+        height: 167px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        margin: 30px 0;
+        cursor: pointer;
+      }
+      form :where(i, p) {
+        color: #5dade2;
+      }
+      form i {
+        font-size: 50px;
+      }
+      form p {
+        font-size: 16px;
+        margin-top: 15px;
+      }
+      section .row {
+        background: #e9f0ff;
+        margin-bottom: 10px;
+        list-style: none;
+        padding: 15px 20px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      section .row i {
+        font-size: 30px;
+        color: #5dade2;
+      }
+      section .details span {
+        font-size: 14px;
+      }
+      .progress-area .row .content {
+        width: 100%;
+        margin-left: 15px;
+      }
+      .progress-area .details {
+        display: flex;
+        align-items: center;
+        margin-bottom: 7px;
+        justify-content: space-between;
+      }
+      .progress-area .progress-bar {
+        height: 6px;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4px;
+        border-radius: 30px;
+      }
+      .progress-bar .progress {
+        height: 100%;
+        width: 65%;
+        background: #5dade2;
+        border-radius: inherit;
+      }
+      .uploaded-area {
+        max-height: 150px;
+        overflow-y: scroll;
+      }
+      .uploaded-area::-webkit-scrollbar {
+        width: 0px;
+      }
+      .uploaded-area .row .content {
+        display: flex;
+        align-items: center;
+      }
+      .uploaded-area .row .details {
+        display: flex;
+        margin-left: 15px;
+        flex-direction: column;
+      }
+      .uploaded-area .details .size {
+        font-size: 13px;
+        color: #404040;
+      }
+      .uploaded-area .fa-check {
+        color: #5dade2;
+        font-size: 16px;
+      }
+    </style>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer">
+      <div class="footer-col">
+        <h3>MENU HOME</h3>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./course.html">Cursos</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Imersões Presenciais</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Cursos Online</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Institucional</h3>
+        <li>Quem somos</li>
+        <li>Vagas Abertas</li>
+        <li>Nossos Artigos</li>
+        <li>Entre em contato</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us. we only send promo offers.</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Seu e-email aqui" />
+          <a href="#" class="yellow">INSCREVER-SE</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright ©2022 Direitos Reservados | Esse modelo foi desenvolvido
+          pela TechProject
+        </p>
+        <div class="pro-links">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+
+    <script></script>
+  </body>
+</html>

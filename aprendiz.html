@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="shortcut icon" href="./img/favicon-1.png" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Know-how</title>
+  </head>
+
+  <body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav>
+      <img src="./img/logo1.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <img class="close" id="menu-close" src="./img/cross.png" alt="" />
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">Sobre nós </a></li>
+          <li><a href="./mentores.html">Mentores</a></li>
+          <li><a href="./course.html">Imersões</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="./socialpainel.html">Comunidade</a></li>
+        </ul>
+        <img id="menu-btn" src="./img/menus.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- ========== HOME ========== -->
+    <section class="about-home" id="about-home">
+      <h2 class="h2">Registrar-me como aprendiz</h2>
+      <p class="p">
+        Se tornando um aprendiz da Know-how, todos os cursos de nossas plataformas estarão 
+        desbloqueados, você agora poderá fazer nossas imersões e se aprimorar com um conteúdo de qualidade.
+      </p>
+    </section>
+
+    <!-- ========== PAYMENT ========== -->
+    <section id="paypay">
+      <div class="wrapper">
+        <h2>Formulário de Pagamento e Registro</h2>
+
+        <form action="" method="post">
+          <!--Account Information Start-->
+          <h4>Conta</h4>
+          <div class="input_group">
+            <div class="input_box">
+              <input
+                type="text"
+                placeholder="Nome completo"
+                required
+                class="name"
+              />
+              <i class="fa fa-user-circle icon"></i>
+            </div>
+            <div class="input_box">
+              <input
+                type="text"
+                placeholder="Nome no cartão"
+                required
+                class="name"
+              />
+              <i class="fa fa-user-circle icon"></i>
+            </div>
+          </div>
+          <div class="input_group">
+            <div class="input_box">
+              <input
+                type="email"
+                placeholder="Seu e-mail aqui"
+                required
+                class="name"
+              />
+              <i class="fa fa-envelope icon"></i>
+            </div>
+          </div>
+          <div class="input_group">
+            <div class="input_box">
+              <input type="text" placeholder="Endereço" required class="name" />
+              <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="input_group">
+            <div class="input_box">
+              <input type="text" placeholder="Cidade" required class="name" />
+              <i class="fa fa-home icon"></i>
+            </div>
+          </div>
+          <!-- <div class="input_group">
+            <div class="input_box">
+              <input type="text" placeholder="Empresa" required class="name" />
+              <i class="fa fa-building icon"></i>
+            </div>
+          </div> -->
+          <!--Account Information End-->
+
+          <!--DOB & Gender Start-->
+          <div class="input_group">
+            <div class="input_box">
+              <h4>Data de nascimento</h4>
+              <input type="text" placeholder="DD" required class="dob" />
+              <input type="text" placeholder="MM" required class="dob" />
+              <input type="text" placeholder="AAAA" required class="dob" />
+            </div>
+            <div class="input_box">
+              <h4>Gênero</h4>
+              <input type="radio" name="gender" class="radio" id="b1" checked />
+              <label for="b1">Masculino</label>
+              <input type="radio" name="gender" class="radio" id="b2" />
+              <label for="b2">Feminino</label>
+            </div>
+          </div>
+          <!--DOB & Gender End-->
+
+          <!--Payment Details Start-->
+          <!-- <div class="input_group">
+            <div class="input_box">
+              <h4>Detalhes do pagamento</h4>
+              <input type="radio" name="pay" class="radio" id="bc1" checked />
+              <label for="bc1"><span>Cartão de Crédito</span></label>
+              <input type="radio" name="pay" class="radio" id="bc2" />
+              <label for="bc2"><span>Paypal</span></label>
+            </div>
+          </div> -->
+          <div class="input_group">
+            <div class="input_box">
+              <input
+                type="tel"
+                name=""
+                class="name"
+                placeholder="Numero do Cartão"
+                required
+              />
+              <i class="fa fa-credit-card icon"></i>
+            </div>
+          </div>
+          <div class="input_group">
+            <div class="input_box">
+              <input
+                type="tel"
+                name=""
+                class="name"
+                placeholder="Código de Segurança"
+                required
+              />
+              <i class="fa fa-user icon"></i>
+            </div>
+          </div>
+          <div class="input_group">
+            <div class="input_box">
+              <div class="input_box">
+                <input
+                  type="number"
+                  placeholder="Mês de Exp"
+                  required
+                  class="name"
+                />
+                <i class="fa fa-calendar icon" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="input_box">
+              <input
+                type="number"
+                placeholder="Ano de Exp"
+                required
+                class="name"
+              />
+              <i class="fa fa-calendar icon" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="input_box">
+            <input type="number" placeholder="Valor" required class="name" />
+            <i class="fa fa-coins icon" aria-hidden="true"></i>
+          </div>
+
+          <!--Payment Details End-->
+
+          <div class="input_group">
+            <div class="input_box">
+              <button type="submit">SE TORNAR UM APRENDIZ</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <style>
+      /* FORM PAYMENT CSS */
+      @media screen and (max-width: 769px) {
+        .wrapper {
+          height: 75vh;
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #paypay {
+        background-image: url(./img/meeting1.jpg);
+        width: 100%;
+        height: 150vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrapper {
+        background-color: #fff;
+        width: 95%;
+        height: 115vh;
+        padding: 30px 25px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+      .wrapper h2 {
+        background-color: #fcfcfc;
+        color: rgb(44, 44, 80);
+        font-size: 24px;
+        padding: 10px;
+        margin-bottom: 8px;
+        text-align: center;
+        border: 1px dashed rgb(44, 44, 80);
+        font-weight: 500;
+      }
+      .wrapper h4 {
+        padding-bottom: 5px;
+        color: rgb(44, 44, 80);
+      }
+      .input_group {
+        margin-bottom: 8px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: 5px 0;
+      }
+      .input_box {
+        width: 100%;
+        margin-right: 12px;
+        position: relative;
+      }
+      .input_box:last-child {
+        margin-right: 0;
+      }
+      .input_box .name {
+        padding: 14px 10px 14px 50px;
+        width: 100%;
+        background-color: #fcfcfc;
+        border: 1px solid #0003;
+        outline: none;
+        letter-spacing: 1px;
+        transition: 0.3s ease;
+        border-radius: 3px;
+        color: #333;
+      }
+      .input_box .name:focus,
+      .dob:focus {
+        -webkit-box-shadow: 0 0 2px 1px rgb(44, 44, 80);
+        -moz-box-shadow: 0 0 2px 1px rgb(44, 44, 80);
+        box-shadow: 0 0 2px 1px rgb(44, 44, 80);
+        border: 1px solid rgb(44, 44, 80);
+      }
+      .input_box .icon {
+        width: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        color: #333;
+        background-color: #f1f1f1;
+        border-radius: 2px 0 0 2px;
+        transition: 0.3s;
+        font-size: 20px;
+        pointer-events: none;
+        border: 1px solid #00000003;
+        border-right: none;
+      }
+      .name:focus + .icon {
+        background-color: rgb(44, 44, 80);
+        color: #fff;
+        border-right: 1px solid rgb(44, 44, 80);
+        border: none;
+        transition: 1s;
+      }
+      .dob {
+        width: 30%;
+        padding: 14px;
+        text-align: center;
+        background-color: #fcfcfc;
+        transition: 0.3s;
+        outline: none;
+        border: 1px solid #c0bfbf;
+        border-radius: 3px;
+      }
+      .radio {
+        display: none;
+      }
+      .input_box label {
+        width: 50%;
+        padding: 13px;
+        background-color: #fcfcfc;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        border: 1px solid #c0bfbf;
+      }
+      .input_box label:first-of-type {
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-right: none;
+        cursor: pointer;
+      }
+      .input_box label:last-of-type {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        cursor: pointer;
+      }
+      .radio:checked + label {
+        background-color: rgb(44, 44, 80);
+        color: #fff;
+        transition: 0.5s;
+      }
+      .input_box button {
+        width: 100%;
+        background-color: #fd7e14;
+        border: none;
+        color: #fff;
+        padding: 15px;
+        margin-top: 10px;
+        border-right: 4px;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+      }
+      .input_box button:hover {
+        cursor: pointer;
+        background-color: rgb(44, 44, 80);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    </style>
+
+   <!-- ========== FOOTER ========== -->
+   <footer class="footer" id="footer">
+    <div class="copyright">
+      <p>
+        Copyright ©2022 Direitos Reservados | Esse modelo foi desenvolvido
+        pela TechProject
+      </p>
+      <div class="pro-links">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+
+    <script src="./script.js"></script>
+
+    <script>
+    </script>
+  </body>
+</html>

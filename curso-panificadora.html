@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== FAVICON ========== -->
+    <link rel="shortcut icon" href="./img/favicon-1.png" />
+
+    <!-- ========== FONT AWESOME ========== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- ========== CSS ========== -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title> Know-how </title>
+  </head>
+
+  <body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav>
+      <img src="./img/logo1.png" alt="" />
+      <div class="navigation">
+        <ul>
+          <img class="close" id="menu-close" src="./img/cross.png" alt="" />
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">Sobre nós </a></li>
+          <li><a href="./mentores.html">Mentores</a></li>
+          <li><a href="./course.html">Imersões</a></li>
+          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="./socialpainel.html">Comunidade</a></li>
+        </ul>
+        <img id="menu-btn" src="./img/menus.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- ========== HOME ========== -->
+    <section id="about-home">
+      <h2>Aprimore-se com nossos treinamentos mais populares</h2>
+    </section>
+
+    <!-- ========== INNER ========== -->
+    <section id="course-inner">
+      <div class="overview">
+        <img class="course-img" src="./img/panificadora-curso.jpg" alt="" />
+        <div class="course-head">
+          <div class="c-name">
+            <h2>Processo de fabricação e Comércio de pães congelados</h2>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>
+              A empresa Pães&Cia inovou no mercado com a comercialização de produtos de padaria congelados.
+            </p>
+          </div>
+
+          <!-- <span>$49.99</span> -->
+        </div>
+
+        <h3>Mentoria</h3>
+        <div class="tutor">
+          <img src="./images/social6.jpg" alt="" />
+          <div class="tutor-det">
+            <h5>Paul Anderson</h5>
+            <p>Padeiro</p>
+          </div>
+        </div>
+        <hr />
+        <h3>Visão geral do curso</h3>
+        <p>
+          Temos uma equipe especializada na fabricação de pães  de todos os tipos, que após o processo de formação da massa os produtos são pré assados e congelados.
+          <br><br>
+
+          A equipe de vendas atua no comércio atacado em geral para redes de supermercados e grandes padarias na região de Minas e outros estados, oferecendo produtos de qualidade e vendendo praticidade para as empresas..
+          <br><br>
+
+          Esse processo vendas de produto tem ganhado muito mercado devido  a  praticidade  para as grandes redes que não precisam instalar padarias com grande estrutura, eles investem apenas em fornos para assar o produto e disponibilizar 
+
+        </p>
+        <hr />
+      </div>
+
+      <div class="enroll">
+        <h3>Este curso inclui:</h3>
+        <p><i class="fas fa-video"></i>52 horas de vídeo</p>
+        <p><i class="far fa-newspaper"></i>75 Artigos</p>
+        <p><i class="fas fa-cloud"></i>Recursos para download</p>
+        <p><i class="fas fa-infinity"></i>Acesso vitalício completo</p>
+        <p><i class="fas fa-mobile-alt"></i>Acesse pela TV ou Celular</p>
+        <p><i class="fas fa-paperclip"></i>Atribuições</p>
+        <p><i class="fas fa-trophy"></i>Certificado de Conclusão</p>
+        <div class="enroll-btn">
+          <a class="blue" href="#">ME MATRICULAR</a>
+        </div>
+      </div>
+    </section>
+
+   <!-- ========== FOOTER ========== -->
+   <footer class="footer" id="footer">
+    <div class="copyright">
+      <p>
+        Copyright ©2022 Direitos Reservados | Esse modelo foi desenvolvido
+        pela TechProject
+      </p>
+      <div class="pro-links">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
